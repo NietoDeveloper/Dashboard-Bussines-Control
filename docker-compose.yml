@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# Production stack. Run with:
+#   docker compose up --build
+#
+# The dashboard talks to your backend purely over HTTP/WebSocket (see
+# lib/api.ts and lib/socket.ts) — it never touches a database directly, so
+# no database service is required here. If you want to run your backend and
+# its database alongside the dashboard for a self-contained deploy, add
+# services for them below (a couple of commented-out examples are included
+# as a starting point).
+# ---------------------------------------------------------------------------
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # These get baked into the client bundle at build time — rebuild
+        # the image after changing them.
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-}
+        NEXT_PUBLIC_SOCKET_URL: ${NEXT_PUBLIC_SOCKET_URL:-}
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  # --- Optional: your backend, if you want it deployed alongside this
+  # dashboard. Point NEXT_PUBLIC_API_URL above at its exposed port/URL.
+  # backend:
+  #   build: ../your-backend
+  #   ports:
+  #     - "8080:8080"
+  #   environment:
+  #     - MONGO_URI=mongodb://mongo:27017/your-db
+  #   depends_on:
+  #     - mongo
+
+  # --- Optional: a database, if your backend runs in this same compose
+  # project. Swap the image for postgres:16-alpine, mysql:8, etc. as needed.
+  # mongo:
+  #   image: mongo:7
+  #   volumes:
+  #     - mongo-data:/data/db
+  #   ports:
+  #     - "27017:27017"
+
+# volumes:
+#   mongo-data:
