@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+/* ===========================================================================
+   BRAND THEME — the only place you need to touch to re-skin this template
+   for a different business. Values are RGB triplets (space-separated, no
+   commas) so Tailwind's opacity modifiers (e.g. `text-accent/60`) work.
+   Pick a palette with a color picker and paste the R G B numbers below.
+   Changes here take effect everywhere: components never hardcode colors.
+   =========================================================================== */
+:root {
+  color-scheme: dark;
+
+  /* Primary accent — buttons, active nav, highlights, live indicators */
+  --color-accent: 255 215 0;       /* default: gold */
+  --color-accent-dim: 184 151 31;
+
+  /* Body / label text */
+  --color-ink: 220 220 220;        /* default: gainsboro */
+
+  /* Backgrounds, from darkest to lightest */
+  --color-surface-base: 8 9 10;
+  --color-surface-panel: 16 17 19;
+  --color-surface-elevated: 23 24 27;
+  --color-surface-line: 35 36 39;
+
+  /* Status semantics — used for booking/order/message states everywhere */
+  --color-status-ok: 0 210 106;
+  --color-status-warn: 255 176 32;
+  --color-status-bad: 255 77 79;
+  --color-status-idle: 91 95 102;
+
+  /* Typography */
+  --font-sans: "Inter";
+  --font-mono: "JetBrains Mono";
+}
+
+/* Example alternate palette for a different vertical — a clinic or salon
+   might prefer a teal accent instead of gold. Uncomment and edit to try:
+
+:root {
+  --color-accent: 45 212 191;
+  --color-accent-dim: 20 130 120;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(var(--color-surface-base));
+  color: rgb(var(--color-ink));
+}
+
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden; /* the app manages its own internal scroll regions */
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+}
+
+/* subtle blueprint / telemetry grid, the recurring visual motif */
+.grid-backdrop {
+  background-image: linear-gradient(rgb(var(--color-accent) / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--color-accent) / 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-surface-line));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--color-accent-dim));
+}
+
+/* keyboard focus visibility, kept consistent with the accent color */
+:focus-visible {
+  outline: 2px solid rgb(var(--color-accent));
+  outline-offset: 2px;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
