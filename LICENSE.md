@@ -41,4 +41,4 @@ of this software and associated documentation files (the "Software"), to
 in the Software without restris including without limitation  rights
 to use, copmodify, rge, publish, distribute, sublicense,of, andermit persons to 
 E
-IMPLIED, INCLUDING BUT N LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+IMPLIED, INCLUDING BUT N LIMITED TO THE WARRANTIES
