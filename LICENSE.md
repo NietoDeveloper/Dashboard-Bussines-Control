@@ -38,4 +38,4 @@ Copyright (c) 2026 Manuel Nieto (NietoDeveloper)
 
 Permission is herebye of charge, to any person obsociatedntation files (the "Software"), to 
 in the Software without restris including without limitatio
-to use, copmodify, rge, publisistributeINCLUDING BUT N LIMITED TO
+to 
