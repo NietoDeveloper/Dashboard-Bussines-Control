@@ -366,12 +366,3 @@ docker compose -f docker-compose.dev.yml up --build
 ```
 
 Your code is mounted as a volume, so changes are reflected instantly inside the container. Open `http://localhost:3000`.
-
-### Production
-
-```bash
-cp .env.example .env.local
-docker compose up --build -d
-```
-
-Builds a minimal image using Next.js **standalone output** (`next.config.mjs` already sets `output: "standalone"`): no bloated `node_modules`, no full source tree, running as a non-root user.
