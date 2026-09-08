@@ -229,8 +229,3 @@ docker-compose.dev.yml   — development stack
 
 </div>
 
-
-
-
-
-
