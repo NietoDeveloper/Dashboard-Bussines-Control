@@ -37,7 +37,7 @@ SOFTWARE.
 Copyright (c) 2026 Manuel Nieto (NietoDeveloper)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files (the "Software"), to 
 in the Software without restriction, including without limitation  rights
 to use, copmodify, rge, publish, distribute, sublicense,oftware, andermit persons to 
 E
