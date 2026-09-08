@@ -35,5 +35,3 @@ SOFTWARE.
 # MIT License
 
 Copyright (c) 2026 Manuel Nieto (NietoDeveloper)
-
-Permission is herebye of charge, to any person obsociatedntation files (the "Software"), to 
