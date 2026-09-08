@@ -387,17 +387,4 @@ docker build -t dashboard-control \
 docker run -p 3000:3000 dashboard-control
 ```
 
-### Deploy Your Own Backend in the Same Compose
-
-`docker-compose.yml` includes commented-out examples of a `backend` service and a database service (`mongo`) so you can spin everything up together for a self-contained deployment. Uncomment them and adjust the image/port to match your real backend.
-
----
-
-## 🔌 Connecting a Real Backend
-
-<div align="center">
-
-| Step | Action |
-|:----:|:-------|
-| 1 | Define `NEXT_PUBLIC_API_URL` (and `NEXT_PUBLIC_SOCKET_URL` if using WebSockets) in `.env.local` or as a Docker `--build-arg` |
-| 2 | In `lib/auth-context.tsx`, replace the body of `login()` with the already-written "REAL MODE" 
+()` with the already-written "REAL MODE" 
