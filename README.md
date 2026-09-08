@@ -375,16 +375,3 @@ docker compose up --build -d
 ```
 
 Builds a minimal image using Next.js **standalone output** (`next.config.mjs` already sets `output: "standalone"`): no bloated `node_modules`, no full source tree, running as a non-root user.
-
-> ⚠️ If your `NEXT_PUBLIC_API_URL` / `NEXT_PUBLIC_SOCKET_URL` change, you must rebuild the image (`docker compose up --build`) — these are public Next.js variables, baked into the client bundle at **build time**, not runtime.
-
-### Manual Build (No Compose)
-
-```bash
-docker build -t dashboard-control \
-  --build-arg NEXT_PUBLIC_API_URL=https://your-backend.com \
-  .
-docker run -p 3000:3000 dashboard-control
-```
-
-()` with the already-written "REAL MODE" 
