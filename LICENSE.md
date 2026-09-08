@@ -42,7 +42,3 @@ in the Software without restris including without limitation  rights
 to use, copmodify, rge, publish, distribute, sublicense,of, andermit persons to 
 E
 IMPLIED, INCLUDING BUT N LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-
-LIABILITY, WHE CONTRACT, TORT OR OTHERWISE,
-OUT OF ORER DEALINGS 
-SOFTWARE.
