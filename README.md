@@ -53,7 +53,7 @@ Full guide in [`config/README.md`](./config/README.md), including how to adjust 
 <div align="center">
 
 | Module | Status |
-|:-------|:-------|
+| :------- | :------- |
 | 🚀 **Entry flow** | Splash screen → Login → Dashboard, on a single route |
 | 🔑 **Login** | Demo mode (grants access without validating credentials) · a real-auth block is already written and commented out in `lib/auth-context.tsx` |
 | 📊 **Dashboard** | Simulated data (`lib/mockData.ts`) that self-refreshes to feel real-time |
@@ -68,7 +68,7 @@ Full guide in [`config/README.md`](./config/README.md), including how to adjust 
 <div align="center">
 
 | Section | Description |
-|:--------|:-------------|
+| :-------- | :------------- |
 | 📈 **Overview** | KPIs and a general business summary |
 | 📅 **Bookings** | Appointment/reservation management |
 | 💰 **Sales** | Sales tracking |
@@ -161,7 +161,7 @@ docker run -p 3000:3000 dashboard-control
 <div align="center">
 
 | Step | Action |
-|:----:|:-------|
+| :----: | :------- |
 | 1 | Define `NEXT_PUBLIC_API_URL` (and `NEXT_PUBLIC_SOCKET_URL` if using WebSockets) in `.env.local` or as a Docker `--build-arg` |
 | 2 | In `lib/auth-context.tsx`, replace the body of `login()` with the already-written "REAL MODE" section (calls `api.login`) |
 | 3 | In `components/dashboard/DashboardShell.tsx`, replace the `seed*()` calls from `lib/mockData.ts` with calls to `lib/api.ts` (`getBookings`, `getMessages`, `getSales`, `getCustomers`) |
@@ -202,7 +202,7 @@ docker-compose.dev.yml   — development stack
 <div align="center">
 
 | Token | Hex | Role |
-|:------|:----|:-----|
+| :------ | :---- | :----- |
 | `--accent` | `#FFD700` | CTAs · brand highlights |
 | `--background` | `#DCDCDC` | Base background · borders |
 | `--surface` | `#111111` | Panels and cards in dark mode |
@@ -228,4 +228,3 @@ docker-compose.dev.yml   — development stack
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=130&section=footer&animation=fadeIn" width="100%"/>
 
 </div>
-
