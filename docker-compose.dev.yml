@@ -61,4 +61,3 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     ports:
-      - "${PORT:-3000}:3000"
