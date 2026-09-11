@@ -65,16 +65,6 @@ services:
 # ---------------------------------------------------------------------------
 # Development stack with hot module replacement. Run with:
 #   docker compose -f docker-compose.dev.yml up --build
-# ---------------------------------------------------------------------------
-services:
-  dashboard-dev:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    ports:
-      - "${PORT:-3000}:3000"
-    environment:
-
 
 
 
