@@ -78,8 +78,3 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
-    "next": "^15.0.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "socket.io-client": "^4.8.1"
