@@ -118,20 +118,3 @@ export default function LoginScreen() {
   const [correo, setCorreo] = useState("");
   const [clave, setClave] = useState("");
   const [submitting, setSubmitting] = useState(false);
-
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    setSubmitting(true);
-    await login(correo, clave);
-    // No navigation call needed — app/page.tsx re-renders the dashboard
-    // as soon as `employee` is set in AuthContext.
-  }
-
-  return (
-    <div className="grid-backdrop flex h-full w-full items-center justify-center bg-surface-base px-4">
-      <div className="w-full max-w-sm">
-        <div className="mb-8 flex flex-col items-center gap-3 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-accent/40 shadow-accent">
-            <span className="font-mono text-sm font-bold text-accent">{business.shortName}</span>
-          </div>
-          <div>
