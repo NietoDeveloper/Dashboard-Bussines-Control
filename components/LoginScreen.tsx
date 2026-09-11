@@ -152,6 +152,3 @@ export default function LoginScreen() {
               type="email"
               value={correo}
               onChange={(e) => setCorreo(e.target.value)}
-              placeholder="empleado@tunegocio.com"
-              className="rounded-md border border-surface-line bg-surface-elevated px-3 py-2.5 text-sm text-ink outline-none placeholder:text-ink/30 focus:border-accent/50"
-              autoComplete="email"
