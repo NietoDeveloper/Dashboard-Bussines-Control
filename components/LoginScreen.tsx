@@ -172,10 +172,4 @@ export default function LoginScreen() {
 
           <button
             type="submit"
-            disabled={submitting}
-            className="mt-2 rounded-md bg-accent py-2.5 text-sm font-semibold text-surface-base transition-colors hover:bg-accent/90 disabled:opacity-60"
-          >
-            {submitting ? "Ingresando..." : "Ingresar"}
-          </button>
-
-
+            disabled={submitting
