@@ -53,5 +53,4 @@ services:
 
 # ---------------------------------------------------------------------------
 # Development stack with hot module replacement. Run with:
-#   docker compose -f docker-compose.dev.yml up --build
-# ---------------------------------------------------------------------
+#   docker compose -f docker-compo--------------
