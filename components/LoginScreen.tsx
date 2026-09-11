@@ -178,11 +178,4 @@ export default function LoginScreen() {
             {submitting ? "Ingresando..." : "Ingresar"}
           </button>
 
-          <p className="text-center text-[11px] leading-relaxed text-ink/35">
-            {business.loginNote}
-          </p>
-        </form>
-      </div>
-    </div>
-  );
-}
+
