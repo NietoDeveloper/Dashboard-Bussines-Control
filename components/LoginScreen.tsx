@@ -96,19 +96,3 @@ export default function LoginScreen() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-"use client";
-
-import { useState, type FormEvent } from "react";
-import { useAuth } from "@/lib/auth-context";
-import { business } from "@/config/business";
