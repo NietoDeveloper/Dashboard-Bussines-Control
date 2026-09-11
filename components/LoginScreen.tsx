@@ -155,8 +155,3 @@ export default function LoginScreen() {
               placeholder="empleado@tunegocio.com"
               className="rounded-md border border-surface-line bg-surface-elevated px-3 py-2.5 text-sm text-ink outline-none placeholder:text-ink/30 focus:border-accent/50"
               autoComplete="email"
-            />
-          </label>
-
-          <label className="flex flex-col gap-1.5">
-            <span className="text-xs font-medium text-ink/60">Clave</span>
