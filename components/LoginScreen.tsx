@@ -160,16 +160,3 @@ export default function LoginScreen() {
 
           <label className="flex flex-col gap-1.5">
             <span className="text-xs font-medium text-ink/60">Clave</span>
-            <input
-              type="password"
-              value={clave}
-              onChange={(e) => setClave(e.target.value)}
-              placeholder="••••••••"
-              className="rounded-md border border-surface-line bg-surface-elevated px-3 py-2.5 text-sm text-ink outline-none placeholder:text-ink/30 focus:border-accent/50"
-              autoComplete="current-password"
-            />
-          </label>
-
-          <button
-            type="submit"
-            disabled={submitting
