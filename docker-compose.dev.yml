@@ -62,6 +62,3 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "${PORT:-3000}:3000"
-    environment:
-
-      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:
