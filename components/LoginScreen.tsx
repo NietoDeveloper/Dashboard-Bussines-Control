@@ -112,9 +112,3 @@ export default function LoginScreen() {
 import { useState, type FormEvent } from "react";
 import { useAuth } from "@/lib/auth-context";
 import { business } from "@/config/business";
-
-export default function LoginScreen() {
-  const { login } = useAuth();
-  const [correo, setCorreo] = useState("");
-  const [clave, setClave] = useState("");
-  const [submitting, setSubmitting] = useState(false);
