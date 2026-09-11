@@ -58,5 +58,3 @@ services:
 services:
   dashboard-dev:
     build:
-      context: .
-      dockerfile: Dockerfile.dev
