@@ -53,4 +53,3 @@ services:
 
 # ---------------------------------------------------------------------------
 # Development stack with hot module replacement. Run with:
-#   docker compose -f d
