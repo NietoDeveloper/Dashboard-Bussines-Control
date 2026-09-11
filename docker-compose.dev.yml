@@ -67,7 +67,6 @@ services:
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-}
       - NEXT_PUBLIC_SOCKET_URL=${NEXT_PUBLIC_SOCKET_URL:-}
       - WATCHPACK_POLLING=true
-    volumes:
-      - .:/app
+    vol      - .:/app
       - /app/node_modules
       - /app/.next
