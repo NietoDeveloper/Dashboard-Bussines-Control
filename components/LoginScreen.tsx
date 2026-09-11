@@ -135,20 +135,3 @@ export default function LoginScreen() {
             <span className="font-mono text-sm font-bold text-accent">{business.shortName}</span>
           </div>
           <div>
-            <h1 className="font-mono text-lg font-semibold tracking-wide text-ink">
-              {business.name}
-            </h1>
-            <p className="mt-1 text-sm text-ink/50">{business.tagline}</p>
-          </div>
-        </div>
-
-        <form
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-4 rounded-lg border border-surface-line bg-surface-panel p-6"
-        >
-          <label className="flex flex-col gap-1.5">
-            <span className="text-xs font-medium text-ink/60">Correo</span>
-            <input
-              type="email"
-              value={correo}
-              onChange={(e) => setCorreo(e.target.value)}
